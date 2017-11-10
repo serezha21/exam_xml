@@ -1,5 +1,9 @@
 h1 {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
     text-align: center;
+    border-bottom: 1px solid #0f0;
 }
 
 #propertys {
@@ -10,8 +14,10 @@ h1 {
 }
 
 #propertys .property {
-    width: 25%;
-    margin: 0 5px;
+    width: calc(25% - 10px);
+    padding: 0 5px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #0f0;
     line-height: 300%;
 }
 

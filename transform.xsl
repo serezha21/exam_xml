@@ -9,22 +9,23 @@
     <body>
       <h1>Недвижимость</h1>
       <div id="propertys">
-        <xsl:apply-templates/>
+        <xsl:for-each select="CATALOG/property">
+          <xsl:sort select="DATE"/>
+          <xsl:sort select="@count"/>
+          <div class="property">
+            <xsl:apply-templates select="TITLE"/>
+            <xsl:apply-templates select="ADDRESS"/>
+            <xsl:apply-templates select="@type"/>
+            <xsl:apply-templates select="DATE"/>
+            <xsl:if test="@count">
+              <xsl:apply-templates select="@count"/>
+            </xsl:if>
+            <xsl:apply-templates select="PRICE"/>
+          </div>
+        </xsl:for-each>
       </div>
     </body>
   </html>
-</xsl:template>
-<xsl:template match="property">
-  <div class="property">
-    <xsl:apply-templates select="TITLE"/>
-    <xsl:apply-templates select="ADDRESS"/>
-    <xsl:apply-templates select="@type"/>
-    <xsl:apply-templates select="DATE"/>
-    <xsl:if test="@count">
-      <xsl:apply-templates select="@count"/>
-    </xsl:if>
-    <xsl:apply-templates select="PRICE"/>
-  </div>
 </xsl:template>
 
 <xsl:template match="TITLE">
