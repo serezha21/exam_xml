@@ -1,0 +1,9 @@
+<!ELEMENT CATALOG (property*)>
+<!ELEMENT TITLE ANY>
+<!ELEMENT ADDRESS ANY>
+<!ELEMENT DATE ANY>
+<!ELEMENT PRICE ANY>
+<!ELEMENT property ( TITLE | ADDRESS | DATE | PRICE )*>
+<!ATTLIST property 
+     type (Дом|Квартира|Участок) #REQUIRED>
+<!ATTLIST property count CDATA #IMPLIED>
