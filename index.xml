@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+  <CATALOG>
+    <property type="Дом" count="5">
+      <TITLE>Дом пятивышка</TITLE>
+      <ADDRESS>Ул. нанотехников 816З</ADDRESS>
+      <DATE>31.12.2017</DATE>
+      <PRICE>3 000 000 $</PRICE>
+    </property>
+    <property type="Квартира" count="3">
+      <TITLE>Квартира №777</TITLE>
+      <ADDRESS>Ул. нанотехников 816З</ADDRESS>
+      <DATE>31.12.2017</DATE>
+      <PRICE>3 000 $</PRICE>
+    </property>
+    <property type="Участок">
+      <TITLE>Участок где паслись каровы</TITLE>
+      <ADDRESS>Ул. нанотехников 1000-З</ADDRESS>
+      <DATE>31.12.2017</DATE>
+      <PRICE>1 000 000 $</PRICE>
+    </property>
+  </CATALOG>

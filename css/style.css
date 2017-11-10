@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+#propertys {
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#propertys .property {
+    width: 25%;
+    margin: 0 5px;
+    line-height: 300%;
+}
+
+#propertys .property span {
+    font-weight: bold;
+    margin-right: 10px;
+}
