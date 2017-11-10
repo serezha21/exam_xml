@@ -60,7 +60,7 @@
 
 <xsl:template match="PRICE">
   <div class="price">
-    <span>Цена:</span> <xsl:value-of select="."/>
+    <span>Цена:</span> <xsl:value-of select="."/>$
   </div>
 </xsl:template>
 

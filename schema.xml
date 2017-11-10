@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Schema name="SampleSchema" xmlns="urn:schemas-microsoft-com:xml-data"
+    xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  
+  <AttributeType name="type" dt:type="enumeration" dt:values="Дом Квартира Участок" />
+  <AttributeType name="count" dt:type="number" required="no" />
+  
+  <ElementType name="TITLE" model="closed" dt:type="string"
+    content="textOnly">
+  </ElementType>
+  
+  <ElementType name="ADDRESS" model="closed" dt:type="string"
+    content="textOnly">
+  </ElementType>
+  
+  <ElementType name="DATE" model="closed" dt:type="date"
+    content="textOnly">
+  </ElementType>
+  
+  <ElementType name="PRICE" model="closed" dt:type="float"
+    content="textOnly">
+  </ElementType>
+
+  <ElementType name="property" model="closed" content="eltOnly">
+    <attribute type="type" />
+    <attribute type="count" />
+    <element type="TITLE" minOccurs="1" maxOccurs="1"/>
+    <element type="ADDRESS" minOccurs="1" maxOccurs="1"/>
+    <element type="DATE" minOccurs="1" maxOccurs="1"/>
+    <element type="PRICE" minOccurs="1" maxOccurs="1"/>
+  </ElementType>
+
+  <ElementType name="CATALOG" model="closed" content="eltOnly">
+    <element type="property" minOccurs="1" maxOccurs="1"/>
+  </ElementType>
+
+</Schema>
